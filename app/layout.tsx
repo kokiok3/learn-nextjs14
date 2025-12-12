@@ -3,7 +3,7 @@ import Navigation from "../component/navigation"
 
 export const metadata: Metadata = {
     title: {
-        template: '%s kkokkiok3.com',
+        template: '%s | kkokkiok3.com',
         default: 'loading...'
     },
     description: 'Next.js is the best framework for React',
