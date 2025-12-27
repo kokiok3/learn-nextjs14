@@ -38,13 +38,16 @@ export default async function MovieDetailPage({params, searchParams}: {params: P
             {/* 병렬처리 */}
             {/* <div>{movie.title}</div>
             <div>{trailer.length}</div> */}
-            
-<Suspense fallback={<div>Loading...Info</div>}>
-    <MovieInfo id={id} />
-</Suspense>
-<Suspense fallback={<div>Loading...Videos</div>}>
-    <MovieVideos id={id} />
-</Suspense>
+
+            <Suspense fallback={<div>Loading...Info</div>}>
+                <MovieInfo id={id} />
+            </Suspense>
+
+            <br />
+
+            <Suspense fallback={<div>Loading...Videos</div>}>
+                <MovieVideos id={id} />
+            </Suspense>
         </div>
     )
 }

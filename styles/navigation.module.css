@@ -1,8 +1,11 @@
 .nav {
-  background-color: red;
-  padding: 50px 100px;
+  background-color: darkred;
+  padding: 50px 30px;
 }
 
 .nav ul {
   display: flex;
+}
+.nav ul li {
+  padding: 0 10px;
 }

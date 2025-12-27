@@ -17,7 +17,7 @@ export default function Movie({title, id, posterPath}: MovieProps){
     }
 
     return <div className={styles.movie}>
-    <img src={posterPath} alt={title} onClick={handleClick} />
-    <Link href={`/movie/${id}`}>{title}</Link>
-</div>
+        <img src={posterPath} alt={title} onClick={handleClick} />
+        <Link href={`/movie/${id}`}>{title}</Link>
+    </div>
 }
