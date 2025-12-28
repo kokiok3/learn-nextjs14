@@ -10,14 +10,14 @@ interface MovieProps {
     posterPath: string;
 }
 
-export default function Movie({title, id, posterPath}: MovieProps){
+export default function Movie({ title, id, posterPath }: MovieProps) {
     const router = useRouter();
-    const handleClick = ()=>{
+    const handleClick = () => {
         router.push(`/movie/${id}`);
     }
 
     return <div className={styles.movie}>
         <img src={posterPath} alt={title} onClick={handleClick} />
-        <Link href={`/movie/${id}`}>{title}</Link>
+        <Link prefetch href={`/movie/${id}`}>{title}</Link>
     </div>
 }
